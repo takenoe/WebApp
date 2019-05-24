@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="Windows-31J">
+<title>questionnaire</title>
+</head>
+<body>
+	<h1>アンケート入力</h1>
+	<br>
+	<hr>
+	<h5>データを入力後、「送信」をクリックしてください</h5>
+	<form method="get" action="CheckServlet">
+		氏名 :
+		<input type ="text" name="userName"><br>
+		コース :
+		<select name="coss">
+			<option value="HTML基礎">HTML基礎</option>
+			<option value="SQL基礎">SQL基礎</option>
+			<option value="XML基礎">XML基礎</option>
+			<option value="Java基礎">Java基礎</option>
+		</select>
+		<br>
+		理解度:
+		<input type="radio" name="rikai" value="3">よく理解できた
+		<input type="radio" name="rikai" value="2">理解できた
+		<input type="radio" name="rikai" value="1">理解できなかった
+		<br>
+		<input type="submit" value="送信">
+		<input type="reset" value="取消">
+	</form>
+</body>
+</html>
